@@ -74,8 +74,8 @@
     <header class="relative min-h-screen flex items-center justify-center overflow-hidden">
         <!-- Background Image with Overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="sintropia-bottle.png" alt="Sintropia Wine Background"
-                class="w-full h-full object-cover opacity-90">
+            <img src="sintropia-bottle-test.jpg" alt="Sintropia Wine Background"
+                class="w-full h-full object-cover object-[center_20%] opacity-90">
             <div class="absolute inset-0 bg-gradient-to-b from-black/40 via-black/25 to-sintropia-green/60"></div>
         </div>
 
@@ -385,8 +385,9 @@
     <div class="fixed bottom-6 right-6 z-50 flex flex-col items-end gap-2 group">
         <!-- Chat Bubble -->
         <div id="whatsapp-bubble"
-            class="relative bg-white p-4 rounded-lg shadow-xl border border-gray-100 max-w-xs mb-2 transform transition-all duration-300 origin-bottom-right scale-100">
-            <button onclick="document.getElementById('whatsapp-bubble').style.display='none'"
+            class="relative bg-white p-4 rounded-lg shadow-xl border border-gray-100 max-w-xs mb-2 transform transition-all duration-700 ease-out opacity-0 translate-y-10 invisible origin-bottom-right scale-100">
+            <button
+                onclick="document.getElementById('whatsapp-bubble').classList.add('opacity-0', 'translate-y-10', 'invisible');"
                 class="absolute -top-2 -right-2 bg-gray-100 hover:bg-gray-200 text-gray-500 rounded-full p-1 shadow-md transition-colors"
                 aria-label="Fechar">
                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -418,6 +419,15 @@
             </svg>
         </a>
     </div>
+
+    <script>
+        // Show WhatsApp bubble after 5 seconds
+        setTimeout(function () {
+            const bubble = document.getElementById('whatsapp-bubble');
+            bubble.classList.remove('opacity-0', 'translate-y-10', 'invisible');
+            // bubble.classList.add('opacity-100', 'translate-y-0', 'visible');
+        }, 5000);
+    </script>
 
 </body>
 
