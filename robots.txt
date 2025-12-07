@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://sintropia.terraguayi.com.br/sitemap.xml
