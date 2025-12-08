@@ -86,6 +86,25 @@
         }
     }
 </script>
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1915258332400790');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1915258332400790&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 </head>
 
 <body
@@ -121,7 +140,7 @@
             </p>
 
             <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
-                <a href="https://www.terraguayi.com.br/r/aprjoc"
+                <a href="https://www.terraguayi.com.br/r/aprjoc" onclick="fbq('track', 'AddToCart');"
                     class="btn-hover-effect bg-sintropia-terra text-white px-8 py-4 rounded-sm font-medium text-lg uppercase tracking-wide w-full md:w-auto hover:bg-opacity-90">
                     Quero garantir minhas garrafas
                 </a>
@@ -321,7 +340,7 @@
                         </li>
                     </ul>
 
-                    <a href="https://www.terraguayi.com.br/r/aprjoc"
+                    <a href="https://www.terraguayi.com.br/r/aprjoc" onclick="fbq('track', 'AddToCart');"
                         class="btn-hover-effect block w-full bg-sintropia-green text-white text-center py-4 rounded-sm font-bold text-lg uppercase tracking-wide hover:bg-sintropia-green/90 mb-4">
                         Adicionar ao carrinho
                     </a>
