@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrigado pela Compra | Sintropia</title>
+    <link rel="icon" href="terraguayi-icon.png" type="image/png">
+    <meta name="robots" content="noindex">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Tailwind Configuration (Same as index.html) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sintropia: {
+                            cream: '#F9F7F2',
+                            green: '#2C3E2C',
+                            terra: '#C8553D',
+                            mango: '#E89B25',
+                            sand: '#E5DCC5',
+                            dark: '#1A1A1A'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    backgroundImage: {
+                        'texture': "url('data:image/svg+xml,%3Csvg width=\\'100\\' height=\\'100\\' viewBox=\\'0 0 100 100\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cpath d=\\'M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z\\' fill=\\'%232c3e2c\\' fill-opacity=\\'0.03\\' fill-rule=\\'evenodd\\'/%3E%3C/svg%3E')"
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .btn-hover-effect {
+            transition: all 0.3s ease;
+        }
+
+        .btn-hover-effect:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <!-- Meta Pixel Code (Keep tracking) -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1915258332400790');
+        fbq('track', 'Purchase');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1915258332400790&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+</head>
+
+<body
+    class="bg-sintropia-cream text-sintropia-green font-sans antialiased selection:bg-sintropia-terra selection:text-white">
+
+    <!-- Header / Logo -->
+    <div class="bg-sintropia-green text-center py-6">
+        <a href="index.html">
+            <img src="terraguayi-logo-full.png" alt="Terra Guayi Logo"
+                class="h-16 mx-auto opacity-90 hover:opacity-100 transition">
+        </a>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 md:py-20 min-h-[80vh] flex flex-col items-center justify-center">
+
+        <div class="max-w-3xl w-full bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-sintropia-sand relative overflow-hidden"
+            data-aos="fade-up">
+
+            <!-- Confetti/Decor placeholder -->
+            <div
+                class="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-sintropia-mango via-sintropia-terra to-sintropia-mango">
+            </div>
+
+            <div class="text-center mb-10">
+                <div
+                    class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6 text-green-600">
+                    <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </div>
+                <h1 class="font-serif text-3xl md:text-5xl font-bold text-sintropia-green mb-4">Obrigado pela sua
+                    compra!</h1>
+                <div class="mt-8 bg-sintropia-cream/50 p-6 rounded-xl border border-sintropia-sand">
+                    <p class="text-sintropia-dark font-medium">
+                        📦 <span
+                            class="uppercase tracking-wider font-bold text-xs text-sintropia-terra block mb-1">Informação
+                            Importante</span>
+                        Nossos envios são realizados sempre às <strong
+                            class="text-sintropia-green">Quartas-feiras</strong>.</br></br>
+                        Para que possamos lhe enviar seu vinho o mais rápido possível, é necessário que você nos envie
+                        seus dados através do formulário abaixo ou pelo WhatsApp (38) 99951-6540.
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-t border-sintropia-sand/50 pt-10">
+                <h2 class="font-serif text-2xl font-bold text-center mb-2">Dados para Envio</h2>
+                <p class="text-center text-sintropia-green/60 mb-8 text-sm">Por favor, preencha os dados abaixo e nos
+                    envie para agilizarmos a entrega.</p>
+
+                <form id="shippingForm" class="space-y-5 max-w-lg mx-auto" onsubmit="event.preventDefault();">
+
+                    <div>
+                        <label for="nome" class="block text-sm font-medium text-gray-700 mb-1">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sintropia-mango focus:border-transparent outline-none transition bg-gray-50">
+                    </div>
+
+                    <div>
+                        <label for="cpf" class="block text-sm font-medium text-gray-700 mb-1">CPF</label>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sintropia-mango focus:border-transparent outline-none transition bg-gray-50">
+                    </div>
+
+                    <div>
+                        <label for="cep" class="block text-sm font-medium text-gray-700 mb-1">CEP</label>
+                        <input type="text" id="cep" name="cep" placeholder="00000-000" required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sintropia-mango focus:border-transparent outline-none transition bg-gray-50">
+                    </div>
+
+                    <div>
+                        <label for="endereco" class="block text-sm font-medium text-gray-700 mb-1">Endereço
+                            Completo</label>
+                        <textarea id="endereco" name="endereco" rows="3" placeholder="Rua, Número, Bairro, Cidade - UF"
+                            required
+                            class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-sintropia-mango focus:border-transparent outline-none transition bg-gray-50"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+                        <button type="button" onclick="sendWhatsapp()"
+                            class="btn-hover-effect flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#20bd5a] text-white py-3.5 px-6 rounded-full font-bold shadow-lg w-full">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                            Enviar no WhatsApp
+                        </button>
+
+                        <button type="button" onclick="sendEmail()"
+                            class="btn-hover-effect flex items-center justify-center gap-2 bg-sintropia-green hover:bg-sintropia-dark text-white py-3.5 px-6 rounded-full font-bold shadow-lg w-full">
+                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                                </path>
+                            </svg>
+                            Enviar por E-mail
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="mt-8 text-center bg-white/30 backdrop-blur-sm p-4 rounded-lg px-8">
+            <p class="text-sintropia-green text-sm">Dúvidas? Entre em contato conosco pelo link do WhatsApp no canto da
+                tela.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer / FAQ -->
+    <footer class="bg-sintropia-green text-sintropia-cream/80 py-16 border-t border-white/10">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div>
+                    <img src="terraguayi-logo-full.png" alt="Logo Terra Guayi" class="h-24 mb-6">
+                    <p class="mb-6 max-w-sm">Vinho de manga agroecológica. Uma celebração da terra, do tempo e da
+                        fermentação selvagem.</p>
+                    <div class="flex gap-4">
+                        <a href="https://www.instagram.com/terraguayi"
+                            class="hover:text-sintropia-mango transition">Instagram</a>
+                        <a href="https://wa.me/5538999516540" target="_blank"
+                            class="hover:text-sintropia-mango transition">Contato</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white mb-4 uppercase tracking-wider text-sm">Dúvidas Frequentes</h4>
+                    <div class="space-y-4 text-sm">
+                        <details class="group cursor-pointer">
+                            <summary
+                                class="list-none flex justify-between items-center border-b border-white/10 pb-2 group-hover:text-sintropia-mango transition">
+                                <span>Qual o prazo de entrega?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-neutral-400 mt-2 group-open:animate-fadeIn">
+                                Enviamos para todo o Brasil. Para garantir o cuidado no transporte, nossos envios são
+                                realizados todas as quartas-feiras. O prazo médio após o envio é de 3 a 7 dias úteis.
+                            </p>
+                        </details>
+                        <details class="group cursor-pointer">
+                            <summary
+                                class="list-none flex justify-between items-center border-b border-white/10 pb-2 group-hover:text-sintropia-mango transition">
+                                <span>Como harmonizar?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-neutral-400 mt-2 group-open:animate-fadeIn">
+                                Perfeito com queijos de cura média, pratos da culinária tailandesa ou indiana, e risotos
+                                de frutos do mar.
+                            </p>
+                        </details>
+                        <details class="group cursor-pointer">
+                            <summary
+                                class="list-none flex justify-between items-center border-b border-white/10 pb-2 group-hover:text-sintropia-mango transition">
+                                <span>Qual a graduação alcoólica?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-neutral-400 mt-2 group-open:animate-fadeIn">
+                                A graduação alcoólica do vinho Sintropia 2024 é de 7,3%.
+                            </p>
+                        </details>
+                        <details class="group cursor-pointer">
+                            <summary
+                                class="list-none flex justify-between items-center border-b border-white/10 pb-2 group-hover:text-sintropia-mango transition">
+                                <span>Qual a temperatura de serviço?</span>
+                                <span class="transition group-open:rotate-180">
+                                    <svg fill="none" height="24" shape-rendering="geometricPrecision"
+                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" viewBox="0 0 24 24" width="24">
+                                        <path d="M6 9l6 6 6-6"></path>
+                                    </svg>
+                                </span>
+                            </summary>
+                            <p class="text-neutral-400 mt-2 group-open:animate-fadeIn">
+                                A temperatura de serviço ideal para o vinho Sintropia 2024 é entre 16°C e 18°C.
+                            </p>
+                        </details>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-16 pt-8 border-t border-white/10 text-center text-xs text-sintropia-cream/40">
+                &copy; 2025 Terra Guayi. CNPJ: 32.718.202/0001-60. Todos os direitos reservados. <br>
+                Beba com moderação. Venda proibida para menores de 18 anos.
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Widget (Reused) -->
+    <div class="fixed bottom-6 right-6 z-50">
+        <a href="https://wa.me/5538999516540" target="_blank"
+            class="bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center">
+            <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.008-.57-.008-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 50,
+            easing: 'ease-out-quad'
+        });
+
+        function getFormData() {
+            const nome = document.getElementById('nome').value.trim();
+            const cpf = document.getElementById('cpf').value.trim();
+            const endereco = document.getElementById('endereco').value.trim();
+            const cep = document.getElementById('cep').value.trim();
+            return { nome, cpf, endereco, cep };
+        }
+
+        function validateForm() {
+            const { nome, cpf, endereco, cep } = getFormData();
+            if (!nome || !cpf || !endereco || !cep) {
+                alert("Por favor, preencha todos os campos do endereço para continuarmos.");
+                return false;
+            }
+            return true;
+        }
+
+        function sendWhatsapp() {
+            if (!validateForm()) return;
+            const { nome, cpf, endereco, cep } = getFormData();
+
+            const text = `*Nova Compra Sintropia!* 🍷\n\nOlá, segue meu dados para envio:\n\n*Nome:* ${nome}\n*CPF:* ${cpf}\n*Endereço:* ${endereco}\n*CEP:* ${cep}\n\nObrigado!`;
+            const encodedText = encodeURIComponent(text);
+
+            window.open(`https://wa.me/5538999516540?text=${encodedText}`, '_blank');
+        }
+
+        function sendEmail() {
+            if (!validateForm()) return;
+            const { nome, cpf, endereco, cep } = getFormData();
+
+            const subject = encodeURIComponent("Dados para Envio - Compra Sintropia");
+            const body = encodeURIComponent(`Olá,\n\nSegue meus dados para o envio da minha compra do Vinho Sintropia 2024.\n\nNome: ${nome}\nCPF: ${cpf}\nEndereço: ${endereco}\nCEP: ${cep}\n\nFico no aguardo do envio na quarta-feira!\n\nAtenciosamente,\n${nome}`);
+
+            window.open(`mailto:vinhosterraguayi@gmail.com?subject=${subject}&body=${body}`, '_blank');
+        }
+    </script>
+</body>
+
+</html>
